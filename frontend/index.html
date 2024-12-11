@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Система управления рецептами</title>
+</head>
+<body>
+    <h1>Ваша кулинарная книга</h1>
+    <p>Управление Рецептами</p>
+    
+    <div class="container">
+        <h2>Добавить новый рецепт:</h2>
+        <form id="recipeForm">
+            <input type="text" id="name" placeholder="Название">
+            <textarea id="description" placeholder="Описание" required minlength="10"></textarea>
+            <input type="text" id="ingredient_list" placeholder="Ингредиенты" required minlength="10">
+            <input type="number" min="0" id="preparation_time" placeholder="Время подготовки (мин)" required>
+            <input type="number" min="0" id="cooking_time" placeholder="Время готовки (мин)" required>
+            <button type="submit">Добавить рецепт</button>
+        </form>
+    </div>
+
+    <h3>Фильтрация рецептов:</h3>
+    <input type="text" id="filter" placeholder="Введите название" oninput="filterRecipes()">
+    
+    <h2>Список ваших рецептов</h2>
+    <div class="recipe-list recipe-item" id="recipes"></div>
+
+    <a target="_blank" href="http://localhost:3000/api/server-info">операционная система сервера </a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
