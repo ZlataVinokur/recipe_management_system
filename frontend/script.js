@@ -17,7 +17,7 @@ function displayRecipes(recipes) {
     recipes.forEach(recipe => {
         const recipeDiv = document.createElement('div');
         recipeDiv.innerHTML = `
-            <strong>${recipe.name}</strong>
+            <h3><i>${recipe.name}</i></h3>
             <p><strong>Описание:</strong> ${recipe.description}</p>
             <p><strong>Ингредиенты:</strong> ${recipe.ingredient_list}</p>
             <p><strong>Время подготовки:</strong> ${recipe.preparation_time} минут</p>

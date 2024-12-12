@@ -1,27 +1,48 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e3dcd1;
-    color: #333;
+    position: relative;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #dfd3c0;
+    color: #994e33;
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, p {
-    color: #994e33;
-}
-
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 20px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient( #c49b80, transparent 3px), linear-gradient( 90deg, #c49b80, transparent 3px);
+    background-size: 25px 25px;
+    background-position: center center;
+}
+
+.header_title {
+    color: #994e33;
+    margin: 0;
+    line-height: 56px;
+    font-size: 70px;
+    
+}
+
+.header_text {
+    color: white;
+    font-size: 30px;
+    padding-left: 30%;
+    text-shadow: 0 0 10px #b68f75;
+}
+
+.text-style {
+    color: #994e33;
+    margin: 0;
+    font-size: 30px;
+    text-decoration: 2px underline;
 }
 
 form {
@@ -29,7 +50,7 @@ form {
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(105, 61, 52, 0.1);
 }
 
 form input, form textarea, form select {
@@ -39,6 +60,8 @@ form input, form textarea, form select {
     border: 1px solid #ddd;
     border-radius: 4px;
     transition: border-color 0.3s;
+    width: 98%;
+    align-content: center;
 }
 
 form input:focus, 
@@ -52,6 +75,7 @@ button {
     background-color: #d78466;
     color: white;
     border: none;
+    margin-top: 15px;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
@@ -60,6 +84,30 @@ button {
 
 button:hover {
     background-color: #e67d57;
+}
+
+.recipes-content{
+    background-color: #64453a;
+    color: #994e33;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.text-style-light {
+    color: #dfd3c0;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.text-style-min {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
 }
 
 .recipe-list {
@@ -71,13 +119,24 @@ button:hover {
 
 .recipe-item {
     background-color: white;
-    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 2px 4px #e6956a;
-    transition: transform 1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .recipe-item:hover {
-    box-shadow: 0 4px 8px #e6956a;
+    box-shadow: 0 8px 16px #ffa981;
 }
+
+.filter-input {
+    max-width: 15%;
+}
+
+a {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    color: #b68f75;
+}
+
