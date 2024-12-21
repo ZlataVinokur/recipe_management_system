@@ -39,7 +39,7 @@ function editRecipe(id) {
     document.getElementById('preparation_time').value = recipe.preparation_time;
     document.getElementById('cooking_time').value = recipe.cooking_time;
 
-    // Удалим старые данные, чтобы при сохранении они не создавали новый рецепт
+    // Удалить старые данные, чтобы при сохранении они не создавали новый рецепт
     document.getElementById('recipeForm').setAttribute('data-id', id);
 }
 
